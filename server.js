@@ -39,6 +39,7 @@ var articles = {
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
+    var date = data.date;
     var content = data.content;
     
     var htmlTemplate = 
@@ -60,7 +61,7 @@ function createTemplate(data){
         </h3>
         
         <div>
-            Today's date
+            ${date}
         </div>
         <div>
             ${content}
